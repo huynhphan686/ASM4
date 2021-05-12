@@ -26,7 +26,7 @@ public class Manager extends Staff{
     }
     
     @Override
-    public double tinhTienLuong(double heSoLuong, double gioLamThem) {
+    public double tinhTienLuong() {
             if(nhanVien.getChucDanh().equalsIgnoreCase("Business Leader")){
                 return getHeSoLuong()*5000000 + 8000000;
             }else if(nhanVien.getChucDanh().equalsIgnoreCase("Project Leader")){
