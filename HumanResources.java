@@ -15,6 +15,13 @@ import java.util.Scanner;
  * @author Admin
  */
 public class HumanResources {
+    
+    public static void main(String[] args){
+        public void initDeparment(){
+        
+        }
+    }
+    
     private List<Staff> dsNV = new ArrayList<>();
     
     public void themNhanVien() throws ParseException{
@@ -53,7 +60,7 @@ public class HumanResources {
         dsNV.add(nv);
         
     }
-
+    
     /**
      * @return the dsNV
      */
