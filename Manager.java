@@ -27,7 +27,6 @@ public class Manager extends Staff{
     
     @Override
     public double tinhTienLuong(double heSoLuong, double gioLamThem) {
-        for(Staff nhanvien : dsNV){
             if(nhanVien.getChucDanh().equalsIgnoreCase("Business Leader")){
                 return getHeSoLuong()*5000000 + 8000000;
             }else if(nhanVien.getChucDanh().equalsIgnoreCase("Project Leader")){
@@ -35,7 +34,6 @@ public class Manager extends Staff{
             }else if(nhanVien.getChucDanh().equalsIgnoreCase("Technical Leader")){
                 return getHeSoLuong()*5000000 + 3000000;
             }
-        }
     }
     /**
      * @return the chucDanh
