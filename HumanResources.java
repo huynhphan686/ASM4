@@ -30,14 +30,14 @@ public class HumanResources {
         System.out.print("TUỔI: ");
         int tuoiNv = sc.nextInt();
 
-        System.out.print("HỆ SỐ LUONG: ");
+        System.out.print("HỆ SỐ LƯƠNG: ");
         double heSoLuong = sc.nextDouble();
 
         System.out.print("NGÀY BẮT ĐẦU: ");
         String ngayVaoLam = sc.next();
 
-        System.out.print("BỘ PHẬN LÀM VIỆC: ");
-        String boPhanLv = sc.next();
+        System.out.print("BỘ PHẬN : ");
+        String maBP = sc.next();
 
         System.out.print("SỐ NGÀY PHÉP: ");
         int soNgayPhep = sc.nextInt();
@@ -45,11 +45,11 @@ public class HumanResources {
         System.out.print("SỐ GIỜ LÀM THÊM: ");
         double gioLamThem = sc.nextDouble();
         
-        themVaoDs(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, boPhanLv, soNgayPhep, gioLamThem);
+        themVaoDs(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
         System.out.println("== THÊM NHÂN VIÊN THÀNH CÔNG ==");
     }
-    public void themVaoDs(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String boPhanLv, int soNgayPhep, double gioLamThem) throws ParseException{
-        Staff nv = new Employee(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, boPhanLv, soNgayPhep, gioLamThem);
+    public void themVaoDs(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep, double gioLamThem) throws ParseException{
+        Staff nv = new Employee(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
         dsNV.add(nv);
         
     }
