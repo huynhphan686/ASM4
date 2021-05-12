@@ -13,6 +13,6 @@ public class Department {
     private String tenBp;
     private int soLuongNv;
     
-    List<Staff>
+    List<Staff> listStaff = new ArrayList<>();
     
 }
