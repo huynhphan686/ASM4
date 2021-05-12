@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class QuanLyNhanVien {
+public class HumanResources {
     private List<Staff> dsNV = new ArrayList<>();
     
     public void themNhanVien() throws ParseException{
