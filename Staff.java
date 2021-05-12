@@ -34,7 +34,7 @@ public abstract class Staff {
          this.ngayVaoLam = f.parse(ngayVaoLam);
      }
      
-     public abstract double tinhTienLuong(double heSoLuong, double gioLamThem);
+     public abstract double tinhTienLuong();
      public abstract String toString();
      
     /**
