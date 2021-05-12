@@ -23,7 +23,7 @@ public class Employee extends Staff{
     }
     
     @Override
-    public double tinhTienLuong(double heSoLuong, double gioLamThem) {
+    public double tinhTienLuong() {
         return getHeSoLuong()*3000000 + gioLamThem*200000;
     }
     @Override
