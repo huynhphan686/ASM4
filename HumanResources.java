@@ -18,7 +18,7 @@ public class HumanResources {
     
     public static void main(String[] args){
         public void initDeparment(){
-        
+            List<> = new ArrayList<>();
         }
     }
     
