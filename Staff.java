@@ -19,15 +19,15 @@ public abstract class Staff {
      private int tuoiNv;
      private double heSoLuong;
      private Date ngayVaoLam;
-     private String boPhanLv;
      private int soNgayPhep;
+     private String maBP;
      
-     public Staff(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String boPhanLv, int soNgayPhep) throws ParseException{
+     public Staff(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep) throws ParseException{
          this.tenNv = tenNv;
          this.tuoiNv = tuoiNv;
          this.maNV = maNv;
          this.heSoLuong = heSoLuong;
-         this.boPhanLv = boPhanLv;
+         this.maBP = maBP;
          this.soNgayPhep = soNgayPhep;
          
          SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy");
@@ -110,15 +110,15 @@ public abstract class Staff {
     /**
      * @return the boPhanLv
      */
-    public String getBoPhanLv() {
-        return boPhanLv;
+    public String getMaBP() {
+        return maBP;
     }
 
     /**
      * @param boPhanLv the boPhanLv to set
      */
-    public void setBoPhanLv(String boPhanLv) {
-        this.boPhanLv = boPhanLv;
+    public void setMaBP(String maBP) {
+        this.maBP = maBP;
     }
 
     /**
