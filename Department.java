@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.util.*;
 /**
  *
  * @author Admin
@@ -13,5 +13,6 @@ public class Department {
     private String tenBp;
     private int soLuongNv;
     
+    List<Staff>
     
 }
