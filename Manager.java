@@ -27,13 +27,15 @@ public class Manager extends Staff{
     
     @Override
     public double tinhTienLuong() {
+        double a = 0;
             if(nhanVien.getChucDanh().equalsIgnoreCase("Business Leader")){
-                return getHeSoLuong()*5000000 + 8000000;
+                return a = getHeSoLuong()*5000000 + 8000000;
             }else if(nhanVien.getChucDanh().equalsIgnoreCase("Project Leader")){
-                return getHeSoLuong()*5000000 + 5000000;
+                return a = getHeSoLuong()*5000000 + 5000000;
             }else if(nhanVien.getChucDanh().equalsIgnoreCase("Technical Leader")){
-                return getHeSoLuong()*5000000 + 3000000;
+                return a = getHeSoLuong()*5000000 + 3000000;
             }
+        return a;
     }
     /**
      * @return the chucDanh
