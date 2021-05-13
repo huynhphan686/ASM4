@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.*;
+
 /**
  *
  * @author Admin
@@ -13,9 +13,11 @@ public class Department {
     private String tenBp;
     private int soLuongNv;
     
-    List<Staff> listStaff = new ArrayList<>();
-    
-    
+    public Department(String maBp, String tenBp, int soLuongNv){
+        this.maBp = maBp;
+        this.tenBp = tenBp;
+        this.soLuongNv = soLuongNv;
+    }
     /**
      * @return the maBp
      */
@@ -58,17 +60,5 @@ public class Department {
         this.soLuongNv = soLuongNv;
     }
     
-    /**
-     * @return the dsNV
-     */
-    public List<Staff> getListStaff() {
-        return listStaff;
-    }
-
-    /**
-     * @param dsNV the dsNV to set
-     */
-    public void setListStaff(List<Staff> listStaff) {
-        this.listStaff = listStaff;
-    }
+    
 }
