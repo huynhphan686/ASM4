@@ -18,9 +18,15 @@ public class HumanResources {
     
     public static void main(String[] args){
         public void initDeparment(){
+            public initDepartment(){
+            
+            }
             List<> = new ArrayList<>();
         }
     }
+    
+    //Tạo list department
+    List<Department> listDepartment = new ArrayList<>();
     
     private List<Staff> dsNV = new ArrayList<>();
     
