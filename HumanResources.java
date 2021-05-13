@@ -21,9 +21,7 @@ public class HumanResources {
     }
     
     public void initDeparment(){
-            public initDepartment(){
             
-            }
             //Tạo list department
             List<Department> listDepartment = new ArrayList<>();
     }
