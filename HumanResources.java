@@ -24,10 +24,10 @@ public class HumanResources {
             
             //Tạo list department
             List<Department> listDepartment = new ArrayList<>();
-            listDepartment.add("Phòng A");
-            listDepartment.add("Phòng B");
-            listDepartment.add("Phòng C");
-            listDepartment.add("Phòng D");
+            listDepartment.add(Phòng A);
+            listDepartment.add(Phòng B);
+            listDepartment.add(Phòng C);
+            listDepartment.add(Phòng D);
             
     }
     
