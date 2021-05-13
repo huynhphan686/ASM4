@@ -26,6 +26,10 @@ public class HumanResources {
             Department bp2 = new Department("002","Phòng B", 2);
             Department bp3 = new Department("003","Phòng C", 5);
             Department bp4 = new Department("004","Phòng D", 1);
+            listDepartment.add(bp1);
+            listDepartment.add(bp2);
+            listDepartment.add(bp3);
+            listDepartment.add(bp4);
             
     }
     public void initEmployee(){
