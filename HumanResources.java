@@ -1,4 +1,3 @@
-
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,17 +19,20 @@ public class HumanResources {
         
     }
     
-    public void initDeparment(){
-            
+    public void initDeparment(){           
             //Tạo list department
             List<Department> listDepartment = new ArrayList<>();
-            listDepartment.add(Phòng A);
-            listDepartment.add(Phòng B);
-            listDepartment.add(Phòng C);
-            listDepartment.add(Phòng D);
+            listDepartment.add("001","Phòng A", 3);
+            listDepartment.add("001","Phòng B", 2);
+            listDepartment.add("001","Phòng C", 5);
+            listDepartment.add("001","Phòng D", 1);
             
     }
-    
+    public void initEmployee(){
+        List<Employee> listEmployee = new ArrayList<>();
+        Employee nv1 = new Employee("Nguyen Van A", "1", 20, 3.8, "01/01/2020", maBP, 15, 48.0);
+        listEmployee.add(nv1);       
+    }
     
     
     private List<Staff> dsNV = new ArrayList<>();
