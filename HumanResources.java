@@ -22,10 +22,10 @@ public class HumanResources {
     public void initDeparment(){           
             //Tạo list department
             List<Department> listDepartment = new ArrayList<>();
-            listDepartment.add("001","Phòng A", 3);
-            listDepartment.add("001","Phòng B", 2);
-            listDepartment.add("001","Phòng C", 5);
-            listDepartment.add("001","Phòng D", 1);
+            Department bp1 = new Department("001","Phòng A", 3);
+            Department bp2 = new Department("002","Phòng B", 2);
+            Department bp3 = new Department("003","Phòng C", 5);
+            Department bp4 = new Department("004","Phòng D", 1);
             
     }
     public void initEmployee(){
