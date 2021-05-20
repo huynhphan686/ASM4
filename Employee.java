@@ -27,9 +27,10 @@ public class Employee extends Staff{
     }
     @Override
     public String toString() {
-        return String.format("%-10s%-20s%-10s%-10s%-10s%-20s%-10s%-10s","TÊN: ",
-                "MÃ NHÂN VIÊN", "TUỔI", "HỆ SỐ LƯƠNG", "NGÀY VÀO LÀM",
-                "BỘ PHẬN", "SỐ NGÀY PHÉP", "SỐ GIỜ LÀM THÊM");
+        return String.format("%-10s%-20s%-20s%-20s%-20s%-20s%-20s%-20s", 
+                        getTenNv(), getMaNV(), getTuoiNv(), 
+                        getHeSoLuong(), getNgayVaoLam(), getMaBP(), 
+                        getSoNgayPhep(), getGioLamThem());
     }
     /**
      * @return the gioLamThem
