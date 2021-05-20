@@ -1,4 +1,3 @@
-
 import java.text.ParseException;
 
 /*
@@ -27,15 +26,14 @@ public class Manager extends Staff{
     
     @Override
     public double tinhTienLuong() {
-        double a = 0;
-            if(nhanVien.getChucDanh().equalsIgnoreCase("Business Leader")){
-                return a = getHeSoLuong()*5000000 + 8000000;
-            }else if(nhanVien.getChucDanh().equalsIgnoreCase("Project Leader")){
-                return a = getHeSoLuong()*5000000 + 5000000;
-            }else if(nhanVien.getChucDanh().equalsIgnoreCase("Technical Leader")){
-                return a = getHeSoLuong()*5000000 + 3000000;
+            if(getChucDanh().equalsIgnoreCase("Business Leader")){
+                return getHeSoLuong()*5000000 + 8000000;
+            }else if(getChucDanh().equalsIgnoreCase("Project Leader")){
+                return getHeSoLuong()*5000000 + 5000000;
+            }else if(getChucDanh().equalsIgnoreCase("Technical Leader")){
+                return getHeSoLuong()*5000000 + 3000000;
             }
-        return a;
+        return 0;
     }
     /**
      * @return the chucDanh
