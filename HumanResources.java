@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class HumanResources {
     List<Department> listDepartment = new ArrayList<>();
+    List<Staff> searchStaff = new ArrayList<>();
     private List<Staff> listStaff = new ArrayList<>();
     
     public static void main(String[] args){
@@ -109,5 +110,31 @@ public class HumanResources {
         Staff nv = new Manager(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep);
         listStaff.add(nv);
         
+    }
+    
+    public void timKiem(){
+        System.out.println("NHẬP TÊN HOẶC MÃ NHÂN VIÊN CẦN TÌM: ");
+        Scanner sc = new Scanner(System.in);
+        String searchKey  = sc.nextLine();
+        
+        for(Staff nv : listStaff){
+            if(nv.getTenNv().contains(searchKey) ||
+                    nv.getMaNV().contains(searchKey)){
+                searchStaff.add(nv);
+            }
+        }
+        if(searchStaff.isEmpty()){
+            System.out.println("KHÔNG CÓ NHÂN VIÊN PHÙ HỢP");
+        }else{
+            System.out.println(String.format("%-10s%-20s%-20s%-20s%-20s%-20s%-20s%-20s",
+                    "TÊN", "MÃ NHÂN VIÊN", "TUỔI", "HỆ SỐ LƯƠNG", "NGÀY VÀO LÀM"
+                    ,"MÃ BỘ PHẬN", "SỐ NGÀY PHÉP", "GIỜ LÀM THÊM"));
+            for(Staff nv : searchStaff){
+                System.out.printf("%-10s%-20s%-20s%-20s%-20s%-20s%-20s%-20s", 
+                        nv.getTenNv(), nv.getMaNV(), nv.getTuoiNv(), 
+                        nv.getHeSoLuong(), nv.getNgayVaoLam(), nv.getMaBP(), 
+                        nv.getSoNgayPhep(), nv.getGioLamThem());
+            }
+        }
     }
 }
