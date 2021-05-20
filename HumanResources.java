@@ -130,10 +130,7 @@ public class HumanResources {
                     "TÊN", "MÃ NHÂN VIÊN", "TUỔI", "HỆ SỐ LƯƠNG", "NGÀY VÀO LÀM"
                     ,"MÃ BỘ PHẬN", "SỐ NGÀY PHÉP", "GIỜ LÀM THÊM"));
             for(Staff nv : searchStaff){
-                System.out.printf("%-10s%-20s%-20s%-20s%-20s%-20s%-20s%-20s", 
-                        nv.getTenNv(), nv.getMaNV(), nv.getTuoiNv(), 
-                        nv.getHeSoLuong(), nv.getNgayVaoLam(), nv.getMaBP(), 
-                        nv.getSoNgayPhep(), nv.getGioLamThem());
+                System.out.println(Employee.toString);
             }
         }
     }
