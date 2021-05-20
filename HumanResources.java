@@ -39,7 +39,7 @@ public class HumanResources {
         System.out.println("== THÊM NHÂN VIÊN == ");
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("CÓ CHỨC DANH HAY KHÔNG (1 = CÓ, 0 = KHÔNG): ");
+        System.out.print("1 = NHÂN VIÊN THƯỜNG , 0 = QUẢN LÝ: ");
         int choice = sc.nextInt();
         Boolean isTitle = false;
         switch (choice) {
