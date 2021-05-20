@@ -41,7 +41,7 @@ public class HumanResources {
         
         System.out.print("1 = NHÂN VIÊN THƯỜNG , 0 = QUẢN LÝ: ");
         int choice = sc.nextInt();
-       
+        
         if(choice == 1){
             System.out.print("TÊN: ");
             String tenNv = sc.nextLine();
@@ -67,7 +67,7 @@ public class HumanResources {
             System.out.print("SỐ GIỜ LÀM THÊM: ");
             double gioLamThem = sc.nextDouble();
             
-            themVaoDs(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
+            themNhanVienVaoDs(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
             System.out.println("== THÊM NHÂN VIÊN THÀNH CÔNG ==");
         }else{
             System.out.print("TÊN: ");
@@ -94,14 +94,19 @@ public class HumanResources {
             System.out.print("SỐ NGÀY PHÉP: ");
             int soNgayPhep = sc.nextInt();
 
-            themVaoDs(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep);
+            themQuanLyVaoDs(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep);
             System.out.println("== THÊM NHÂN VIÊN THÀNH CÔNG ==");
         }
         
         
     }
-    public void themVaoDs(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep, double gioLamThem) throws ParseException{
+    public void themNhanVienVaoDs(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep, double gioLamThem) throws ParseException{
         Staff nv = new Employee(tenNv, maNv, tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
+        listStaff.add(nv);
+        
+    }
+    public void themQuanLyVaoDs(String tenNv, String maNv, String chucDanh, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep) throws ParseException{
+        Staff nv = new Manager(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep);
         listStaff.add(nv);
         
     }
