@@ -1,4 +1,3 @@
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,8 +18,8 @@ public abstract class Staff {
      private int tuoiNv;
      private double heSoLuong;
      private Date ngayVaoLam;
-     private int soNgayPhep;
      private String maBP;
+     private int soNgayPhep;
      
      public Staff(String tenNv, String maNv, int tuoiNv, double heSoLuong, String ngayVaoLam, String maBP, int soNgayPhep) throws ParseException{
          this.tenNv = tenNv;
@@ -110,16 +109,6 @@ public abstract class Staff {
     /**
      * @return the boPhanLv
      */
-    public String getMaBP() {
-        return maBP;
-    }
-
-    /**
-     * @param boPhanLv the boPhanLv to set
-     */
-    public void setMaBP(String maBP) {
-        this.maBP = maBP;
-    }
 
     /**
      * @return the soNgayPhep
@@ -133,5 +122,19 @@ public abstract class Staff {
      */
     public void setSoNgayPhep(int soNgayPhep) {
         this.soNgayPhep = soNgayPhep;
+    }
+
+    /**
+     * @return the maBP
+     */
+    public String getMaBP() {
+        return maBP;
+    }
+
+    /**
+     * @param maBP the maBP to set
+     */
+    public void setMaBP(String maBP) {
+        this.maBP = maBP;
     }
 }
