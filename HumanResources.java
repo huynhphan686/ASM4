@@ -102,10 +102,7 @@ public class HumanResources {
             System.out.print("SỐ NGÀY PHÉP: ");
             int soNgayPhep = sc.nextInt();
 
-            System.out.print("SỐ GIỜ LÀM THÊM: ");
-            double gioLamThem = sc.nextDouble();
-            
-            themVaoDs(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep, gioLamThem);
+            themVaoDs(tenNv, maNv, chucDanh , tuoiNv, heSoLuong, ngayVaoLam, maBP, soNgayPhep);
             System.out.println("== THÊM NHÂN VIÊN THÀNH CÔNG ==");
         }
         
