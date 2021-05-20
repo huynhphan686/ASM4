@@ -41,16 +41,8 @@ public class HumanResources {
         
         System.out.print("1 = NHÂN VIÊN THƯỜNG , 0 = QUẢN LÝ: ");
         int choice = sc.nextInt();
-        Boolean isTitle = false;
-        switch (choice) {
-        case 1:
-        isTitle = true;
-        case 0:
-        isTitle = false;
-        break;
-        }
-        
-        if(isTitle == false){
+       
+        if(choice == 1){
             System.out.print("TÊN: ");
             String tenNv = sc.nextLine();
 
